@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Title of the document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/owl.theme.css"/>
+	<link rel="stylesheet" href="/lib/jquery.bxslider.css"/>
+	<link rel="stylesheet" href="css/navbar.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+	<script src="js/lib/html-imports.js"></script>
+	<script src="js/lib/modernizr.js"></script>
+	<link rel="import" href="templates/navbar.html">	
+</head>
+
+<body>
+<!-- Most browsers do not support html5-->
+<!--<div class="navbar"></div>-->
+<script>
+	/**
+	loads our navbar template into our navbar div
+	**/
+   /** var link = document.querySelector('link[rel="import"]');
+
+    // Clone the <template> in the import.
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+	document.querySelector('.navbar').appendChild(clone);**/
+ </script>
+
+
+<!-- Navigation bar-->
+ <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#"><img id="navbar-logo"src="./img/JT_Smith-final-logo-blue_4web.png"></a></h1>
+      </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a href="#" data-reveal-id="myModal" class="button [large]">REPORTS LOG-IN</a></li>
+      </ul>
+    </section>
+  </nav>
+  <!--Login form-->
+  <div id="myModal" class="reveal-modal small" data-reveal>
+    <div id="login-logo-wrapper"><a href="#"><img id="login-logo"src="./img/JT_Smith-final-logo-blue_4web.png"></a></div>
+    <hr>
+    <form>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Email
+            <input type="email" placeholder="Enter your email" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Password
+            <input type="password" placeholder="Enter your password" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12-columns">
+          <a href="#" class="button [large]" id="form-login-btn">LOG-IN</a>
+        </div>
+      </div>
+    </form>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+<!--Carousel Container-->
+<div id="owl-demo" class="owl-carousel">
+  <div>
+  	<div class="textoverlay">
+  	<h1>
+  		TRADE SHOW<br>
+  		<span id="automation-text">AUTOMATION</span><br>
+  		<span id="since-1991-tag">SINCE 1991</span>
+  		</h1>
+  	</div>
+  	<img src="img/Since-1991-Slider-1920x580.jpg">
+  </div>
+  <div><img src="img/Customer-Service-Slider-1920x580.jpg"></div>
+  <div><img src="img/23-years-slider-1920x580.jpg"></div>
+</div>
+
+<!--Secondary tagline-->
+<div class="row secondary-tagline">
+	<div class="large-7 columns secondary-tagline-col"><div class="first-sub-tagline">WE DID IT FIRST AND WE'RE STILL THE BEST</div></div>
+	<div class="large-5 columns secondary-tagline-col">
+		<ul class="bxslider">
+		  <li><div class="second-sub-tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac risus est. In hac habitasse platea dictumst. Maecenas at nibh eget ipsum blandit elementum. Ut gravida quis lacus eu ornare.</div></li>
+		  <li><div class="second-sub-tagline"> mattis maximus massa luctus. Etiam vel ligula egestas velit hendrerit rutrum eu vitae est. Vivamus eget luctus metus. Quisque mollis interdum nunc, at venenatis justo convallis ac. Morbi sed purus id nisl mollis</div></li>
+		  <li><div class="second-sub-tagline">Pellentesque varius bibendum nibh, et elementum lacus sollicitudin at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur et tellus nec mi rhoncus interdum at lacinia</div></li>
+		  <li><div class="second-sub-tagline">congue vitae tempus sed, mollis nec enim. Aenean in sem vel urna finibus dictum. Ut sed nulla ultrices, sollicitudin dui suscipit, laoreet est.</div></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+<script src="js/lib/jquery-1.11.1.min.js"></script>
+<script src="js/lib/foundation.min.js"></script>
+<script src="js/lib/owl.carousel.min.js"></script>
+<script src="js/lib/jquery.bxslider.min.js"></script>
+<script src="js/index.js"></script>
+</html>

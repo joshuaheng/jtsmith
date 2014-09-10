@@ -1,0 +1,105 @@
+/**
+CSS Styling for Main carousel
+**/
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.owl-carousel div h1, .owl-carousel div .textoverlay{
+    position:absolute;
+    color:#1e4595;
+    width: 100%;
+	text-align: center;
+	height: 100%;
+}
+
+.owl-carousel div h2{
+	color: white;
+	font-style: italic;
+	position: relative;
+}
+
+#automation-text{
+	text-decoration: underline;	
+}
+
+#since-1991-tag{
+	color: #ffffff;
+	font-size: .7em;
+	font-weight: 300;
+	letter-spacing: .25em;
+}
+
+/**
+CSS Styling for row below main carousel.
+**/
+.secondary-tagline{
+	max-width: none;
+	background-color: #1e4595;
+	color: white;
+}
+
+.secondary-tagline-col{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.first-sub-tagline{
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	padding-bottom:24px;
+	padding-top:24px;
+	
+}
+.second-sub-tagline{
+	padding-right: 30px;
+	padding-left: 30px;
+	font-size: 1.3em;
+	border-left-style: none;
+	transition: width 2s;
+    transition-timing-function: linear;
+}
+
+
+/**
+Media Queries
+**/
+@media only screen and (max-width: 40em) {
+	.bx-wrapper{
+		border-left-style: none;
+	}
+	.second-sub-tagline{
+		
+		padding-left: 0px;
+	}
+}
+
+@media only screen and (min-width: 40.063em) {
+	.owl-carousel div h1, .owl-carousel div .textoverlay{
+		font-size: 1.5em;
+	}
+}/* min-width 641px, medium screens */
+
+@media only screen and (min-width: 64.063em) {
+	.owl-carousel div h1, .owl-carousel div .textoverlay{
+		font-size: 2em;
+	}
+
+	.bx-wrapper{
+		border-left-style: solid;
+	}
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 90.063em) {
+	.owl-carousel div h1, .owl-carousel div .textoverlay{
+		font-size: 2.5em;
+		
+	}
+
+} /* min-width 1441px, xlarge screens */
