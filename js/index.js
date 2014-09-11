@@ -22,4 +22,15 @@ $(function(){
 	 	controls: false,
 	 	speed: 1000
 	 });
+
+	 //Detects if document size is in mobile width, toggles the nav list layout as inline or stacked.
+	 $( window ).resize(function() {
+	 	if($( document ).width() <= 640){
+	 		$('.site-list-container').toggleClass('inline-list');
+	 	}
+	 	else{
+	 		$('.site-list-container').toggleClass('inline-list');
+	 	}
+	 });
+	 
 });

@@ -14,8 +14,9 @@ CSS Styling for Main carousel
     position:absolute;
     color:#1e4595;
     width: 100%;
-	text-align: center;
 	height: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .owl-carousel div h2{
@@ -24,15 +25,100 @@ CSS Styling for Main carousel
 	position: relative;
 }
 
-#automation-text{
-	text-decoration: underline;	
+#slide1{
+	text-align: center;
+}
+h1 .tradeshow{
+	line-height: 0.8;
 }
 
-#since-1991-tag{
+h1 .automation-text{
+	line-height: 0.8;
+}
+.tradeshow{
+	font-style: italic;
+	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
+	font-weight: bold;
+	
+}
+.slide-header{
+	position: relative;
+	top: 25%;
+}
+.automation-text{
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: bold;
+	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
+	line-height: 0.8;
+}
+
+.since-1991-tag{
 	color: #ffffff;
 	font-size: .7em;
 	font-weight: 300;
 	letter-spacing: .25em;
+	font-style: italic;
+	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
+}
+#slide2 .textoverlay{
+	max-width: 532px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-left: 15px;
+}
+.customer-service-text{
+	font-size: 2.5em;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
+}
+
+.before-during-after-text{
+	color: aqua;
+	font-weight: bold;
+	font-size: 1.53em;
+	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
+}
+#slide2-title-container{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+#slide2-summary{
+	color:white;
+	max-width: 500px;
+}
+
+.slide3-header{
+	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
+	font-style: italic;
+	font-weight: bold;
+	color: white;
+	font-size: 0.4em;
+	line-height: 0.9;	
+}
+
+.aligned-right{
+	text-align: right;
+	right: 15px;
+	top: 70px;
+	position: relative;
+}
+
+.aligned-left{
+	font-size: 0.5em;
+	color: #1e4595;
+	font-style: normal;
+	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
+	letter-spacing: 1.5px;
+}
+.company-description-container{
+	margin-top: 20%;
+	margin-left: 15px;
+}
+#mobile-main-content{
+	display:none;
 }
 
 /**
@@ -53,8 +139,10 @@ CSS Styling for row below main carousel.
 	font-weight: bold;
 	font-size: 2em;
 	text-align: center;
-	padding-bottom:24px;
-	padding-top:24px;
+	margin-top: 1%;
+	position: relative;
+	
+	line-height: 1.1;
 	
 }
 .second-sub-tagline{
@@ -66,40 +154,186 @@ CSS Styling for row below main carousel.
     transition-timing-function: linear;
 }
 
+.bx-wrapper{
+	padding-top: 0px;
+	border-top-style: none;
+	border-left-style: solid;
+}
 
 /**
 Media Queries
 **/
 @media only screen and (max-width: 40em) {
+	#mobile-main-content{
+		display:inline-block;
+	}
+	.textoverlay{
+		position:absolute;
+		width:100%;
+		text-align: center;
+	}
+	#owl-demo{
+		display:none!important;
+	}
 	.bx-wrapper{
 		border-left-style: none;
+		border-top-style: solid;
+		padding-top: 40px;
+		border-top-width: 1.5px;
+	}
+	.first-sub-tagline{
+		font-size: 1.2em;
+		top: 25px;
 	}
 	.second-sub-tagline{
 		
 		padding-left: 0px;
 	}
+
+	.bx-wrapper{
+		padding-top: 40px;
+		
+		border-left-style: none;
+	}
+	.slide-header{
+		font-size: 1.3em;
+		top: 10px;
+	}
+	.since-1991-tag{
+		letter-spacing: 4px;
+	}
+	#mobile-img{
+		height: 150px;
+		width: 100%;
+	}
 }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 40.063em) and (max-width: 50em){
+	
+	#slide2 .textoverlay{
+		max-width: 400px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+	.first-sub-tagline{
+		top: 25px;
+	}
+	.slide-header{top: 12%;}
+	.tradeshow{font-size:1.5em;}
+	.automation-text{font-size:1.5em;}
+	.since-1991-tag{font-size:1.5em; letter-spacing: 4px;}
+	.customer-service-text{font-size: 0.95em;}
+	.before-during-after-text{font-size: 0.57em;}
+	#slide2-summary{font-size:0.5em; max-width:271px;}
+	.slide3-header{font-size: 0.76em;}
+	.company-description-container{margin-top: 16%;}
+	.aligned-left{font-size:0.3em;}
+	.aligned-right{right: 30px; top: 30px;}
+}
+
+@media only screen and (min-width: 50.063em) and (max-width: 61em){
+	#slide2 .textoverlay{
+		padding-top: 2.6%;
+		padding-bottom: 3%;
+	}
+	.first-sub-tagline{
+		top: 25px;
+	}
+	.slide-header{top: 15%;}
+	.tradeshow{font-size:1.9em;}
+	.automation-text{font-size:1.9em;}
+	.since-1991-tag{font-size:1.9em; letter-spacing: 4px;}
+	.customer-service-text{font-size: 1.6em;}
+	.before-during-after-text{font-size: 0.98em;}
+	#slide2-summary{font-size:0.65em; max-width:367px;}
+	.slide3-header{font-size: 0.9em;}
+	.company-description-container{margin-top: 16%;}
+	.aligned-left{font-size:0.35em;}
+	.aligned-right{right: 30px; top: 30px;}
+}
+
+@media only screen and (min-width: 61.063em) and (max-width: 64em){
+	#slide2 .textoverlay{
+		padding-top: 4%;
+		padding-bottom: 3%;
+	}
+	.first-sub-tagline{
+		top: 25px;
+	}
+	.slide-header{top: 12%;}
+	.tradeshow{font-size:2.3em;}
+	.automation-text{font-size:2.3em;}
+	.since-1991-tag{font-size:2.3em; letter-spacing: 7px;}
+	.customer-service-text{font-size: 1.8em;}
+	.before-during-after-text{font-size: 1.1em;}
+	#slide2-summary{font-size:0.65em; max-width:367px;}
+	.slide3-header{font-size: 0.9em;}
+	.company-description-container{margin-top: 18%;}
+	.aligned-left{font-size:0.35em;}
+	.aligned-right{right: 30px; top: 30px;}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em){
+	.bx-wrapper{
+		border-left-style: none;
+		border-top-style: solid;
+		padding-top: 40px;
+		border-top-width: 1.5px;
+	}
 	.owl-carousel div h1, .owl-carousel div .textoverlay{
+		font-size: 1.5em;
+	}
+	.first-sub-tagline{
 		font-size: 1.5em;
 	}
 }/* min-width 641px, medium screens */
 
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
 	.owl-carousel div h1, .owl-carousel div .textoverlay{
-		font-size: 2em;
+		font-size: 2.8em;
 	}
 
-	.bx-wrapper{
-		border-left-style: solid;
+	.slide-header{
+		position: relative;
+		top: 12%;
+		font-size: 0.8em;
 	}
+
+	.since-1991-tag{
+		letter-spacing:4px;
+	}
+	.first-sub-tagline{
+		top: 20px;
+	}
+	.slide3-header{font-size: 0.4em;}
+	.company-description-container{margin-top: 18%;}
+	.aligned-left{font-size:0.45em;}
+	.aligned-right{right: 30px; top: 30px;}
 } /* min-width 1025px, large screens */
 
-@media only screen and (min-width: 90.063em) {
+@media only screen and (min-width: 90.063em) and (max-width: 120em){
 	.owl-carousel div h1, .owl-carousel div .textoverlay{
-		font-size: 2.5em;
-		
+		font-size: 3.2em;
 	}
-
-} /* min-width 1441px, xlarge screens */
+	.slide-header{
+		position: relative;
+		top: 6%;
+	}
+	#slide2 .textoverlay{
+		max-width: 700px;
+	}
+	.customer-service-text{font-size: 3em;}
+	.before-during-after-text{font-size: 1.84em;}
+	#slide2-summary{font-size:0.65em; max-width:700px;}
+	.
+} /* min-width 1441px, xlarge screens */ 
+@media only screen and (min-width: 90.063em) and (max-width: 110em){
+	.first-sub-tagline{
+		top: 20px;
+	}
+}
+@media only screen and (min-width: 1750px){
+	.slide-header{
+		top: 12%;
+	}
+}

@@ -8,11 +8,12 @@
 	<link rel="stylesheet" href="css/foundation.min.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/owl.theme.css"/>
-	<link rel="stylesheet" href="/lib/jquery.bxslider.css"/>
+	<link rel="stylesheet" href="css/global.css"/>
 	<link rel="stylesheet" href="css/navbar.css"/>
 	<link rel="stylesheet" href="css/index.css"/>
-	<script src="js/lib/html-imports.js"></script>
 	<script src="js/lib/modernizr.js"></script>
+	<script type="text/javascript" src="//use.typekit.net/bzk1wwh.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link rel="import" href="templates/navbar.html">	
 </head>
 
@@ -45,10 +46,26 @@
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
-        <li><a href="#" data-reveal-id="myModal" class="button [large]">REPORTS LOG-IN</a></li>
+        <li><a href="#" data-reveal-id="myModal" class="button [large]" id="reports-login-btn">REPORTS LOG-IN</a></li>
       </ul>
+      <ul class="site-nav-container-mobile">
+		  <li><a href="#">PRODUCTS & SERVICES</a></li>
+		  <li><a href="#">OUR COMPANY</a></li>
+		  <li><a href="#">EMPLOYEE LOG-IN</a></li>
+		  <li><a href="#">CONTACT</a></li>
+		  <li class="current"><a href="./">HOME</a></li>
+		</ul>
     </section>
   </nav>
+  <div class="site-nav-container-main">
+  	<ul class="inline-list">
+		  <li><a href="#">PRODUCTS & SERVICES</a></li>
+		  <li><a href="#">OUR COMPANY</a></li>
+		  <li><a href="#">EMPLOYEE LOG-IN</a></li>
+		  <li><a href="#">CONTACT</a></li>
+		  <li id="home-link"><a class="current" href="./">HOME</a></li>
+		</ul>
+  </div>
   <!--Login form-->
   <div id="myModal" class="reveal-modal small" data-reveal>
     <div id="login-logo-wrapper"><a href="#"><img id="login-logo"src="./img/JT_Smith-final-logo-blue_4web.png"></a></div>
@@ -79,28 +96,65 @@
 
 <!--Carousel Container-->
 <div id="owl-demo" class="owl-carousel">
-  <div>
+  <div id="slide1">
   	<div class="textoverlay">
-  	<h1>
-  		TRADE SHOW<br>
-  		<span id="automation-text">AUTOMATION</span><br>
-  		<span id="since-1991-tag">SINCE 1991</span>
-  		</h1>
+	  	<h1>
+	  		<div class="slide-header tradeshow">TRADESHOW</div>
+	  		<div class="slide-header automation-text">AUTOMATION</div>
+	  		<div class="slide-header since-1991-tag">SINCE 1991</div>
+	  	</h1>
   	</div>
   	<img src="img/Since-1991-Slider-1920x580.jpg">
   </div>
-  <div><img src="img/Customer-Service-Slider-1920x580.jpg"></div>
-  <div><img src="img/23-years-slider-1920x580.jpg"></div>
+  <div id="slide2">
+  	<div class="textoverlay">
+  		<div id="slide2-title-container">
+			<h3 style="line-height:0.1;"><span class="customer-service-text">CUSTOMER SERVICE.</span><br></h3>
+			<h6><span class="before-during-after-text">BEFORE THE SHOW. DURING THE SHOW. AFTER THE SHOW.</span>
+			</h6>
+		</div>
+		<p id="slide2-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac risus est. In hac habitasse platea dictumst. Maecenas at nibh eget ipsum blandit elementum. Ut gravida quis lacus eu ornare.</p>
+  	</div>
+  	<img src="img/Customer-Service-Slider-1920x580.jpg">
+  </div>
+  <div id="slide3">
+  		<div class="textoverlay">
+	  	<h1>
+	  		<div class="slide3-header aligned-right">23 YEARS IN BUSINESS.</div>
+	  		<div class="slide3-header aligned-right">OVER 700 TRADE SHOWS.</div>
+	  	</h1>
+	  	<h2>
+	  		<div class="company-description-container">
+		  		<div class="aligned-left">Since 1991, JT SMITH has been increasing sales,</div>
+		  		<div class="aligned-left">eliminating manual order processing, and Increasing</div>
+		  		<div class="aligned-left">the accuracy of your Company’s data. We were the first</div>
+		  		<div class="aligned-left">company to introduce trade show automation software back</div>
+		  		<div class="aligned-left">in 1993. Let us show you why were still the best in the business.</div>
+	  		</div>
+	  	</h2>
+  	</div>
+  	<img src="img/23-years-slider-1920x580.jpg">
+  </div>
 </div>
+<div id="mobile-main-content">
+  	<div class="textoverlay">
+  		<h1>
+  			<div class="slide-header tradeshow">TRADESHOW</div>
+	  		<div class="slide-header automation-text">AUTOMATION</div>
+	  		<div class="slide-header since-1991-tag">SINCE 1991</div>
+  		</h1>
+  	</div>
+  	<img id="mobile-img" src="img/Since-1991-Slider-1920x580.jpg">
+  </div>
 
 <!--Secondary tagline-->
 <div class="row secondary-tagline">
-	<div class="large-7 columns secondary-tagline-col"><div class="first-sub-tagline">WE DID IT FIRST AND WE'RE STILL THE BEST</div></div>
+	<div class="large-7 columns secondary-tagline-col first-sub-tagline"><div>WE DID IT FIRST AND WE'RE STILL THE BEST</div></div>
 	<div class="large-5 columns secondary-tagline-col">
 		<ul class="bxslider">
 		  <li><div class="second-sub-tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac risus est. In hac habitasse platea dictumst. Maecenas at nibh eget ipsum blandit elementum. Ut gravida quis lacus eu ornare.</div></li>
-		  <li><div class="second-sub-tagline"> mattis maximus massa luctus. Etiam vel ligula egestas velit hendrerit rutrum eu vitae est. Vivamus eget luctus metus. Quisque mollis interdum nunc, at venenatis justo convallis ac. Morbi sed purus id nisl mollis</div></li>
-		  <li><div class="second-sub-tagline">Pellentesque varius bibendum nibh, et elementum lacus sollicitudin at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur et tellus nec mi rhoncus interdum at lacinia</div></li>
+		  <li><div class="second-sub-tagline"> mattis maximus massa luctus. Etiam vel ligula egestas velit hendrerit rutrum eu vitae est. Vivamus eget luctus metus.</div></li>
+		  <li><div class="second-sub-tagline">Pellentesque varius bibendum nibh, et elementum lacus sollicitudin at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere</div></li>
 		  <li><div class="second-sub-tagline">congue vitae tempus sed, mollis nec enim. Aenean in sem vel urna finibus dictum. Ut sed nulla ultrices, sollicitudin dui suscipit, laoreet est.</div></li>
 		</ul>
 	</div>

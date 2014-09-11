@@ -6,6 +6,7 @@ CSS for main navbar
 	background-color: white;
 }
 
+
 .top-bar .toggle-topbar.menu-icon a {
 color:#1e4595;
 }
@@ -27,6 +28,29 @@ color:#1e4595;
 .top-bar-section ul li{
 	background-color: white;
 }
+.inline-list>li {
+	background: transparent;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: 0;
+	border-right-style: solid;
+	border-color:#1e4595;
+	font-weight: bold;
+}
+#reports-login-btn{
+	font-family: "franklin-gothic-urw-comp";
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 4px;
+}
+#home-link{
+	border-right-style:none;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button){
+	line-height: normal;
+	background: transparent!important;
+}
 
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
 	background-color: #007095; 
@@ -35,6 +59,23 @@ color:#1e4595;
 #navbar-logo{
 	width:80%;
 	padding-top: 10px;
+}
+.site-nav-container-main{
+	float: right;
+	display: none;
+	position: absolute;
+	right: 20px;
+	top: 75px;
+}
+
+.site-nav-container-mobile{
+	display: none!important;
+	font-family: ;
+}
+
+.current{
+	border-bottom-style:solid;
+	border-bottom-width: 2px;
 }
 
 /**
@@ -56,19 +97,30 @@ CSS for login in form
 /**
 Media queries
 **/
+
 @media only screen and (max-width: 40em){ 
 	#navbar-logo{
-		width: 40%;
+		width: 50%;
 		padding-top: 0px;
 		margin-left: 17px;
 	}
+
+	.site-nav-container-mobile{
+		display:block!important;
+	}
+
+	
 } /* Define mobile styles */
 
 @media only screen and (min-width: 40.063em) {
 	.top-bar{
-		height: 80px;
+		height: 125px;
 	}
-
+	.top-bar .title-area {
+		position: absolute;
+		top: 20px;
+		left: 15px;
+	}
 	.top-bar-section li:not(.has-form) a:not(.button) {
 		background: white;
 		height: 80px;
@@ -87,4 +139,16 @@ Media queries
 		border-style: solid;
 		border-width: 0.2em;
 	}
+
+	.site-nav-container-main{
+		display:inline-block;
+	}
 } /* min-width 641px, medium screens */
+
+@media only screen and (min-width:801px) and (max-width: 900px){
+	#navbar-logo{width:63%;}
+}
+
+@media only screen and (min-width:40.063em) and (max-width: 800px){
+	#navbar-logo{width:50%;}
+}
