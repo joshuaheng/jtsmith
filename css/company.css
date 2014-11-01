@@ -1,0 +1,97 @@
+#company-header-container .section-title{
+	color: white;
+}
+
+#company-title{
+	font-size: 4em;
+	font-weight: 400
+}
+
+.sub-content-container{
+	position: relative;
+}
+
+
+#gray-triangle-pattern{
+	width: 42%;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+
+.call-to-action-container{
+	background-color:#75c5e6;
+}
+
+.no-bullet li{
+	padding-bottom: 15px;
+	margin-left: 18%;
+	margin-right: 18%
+}
+.no-bullet li div{
+	display: block;
+}
+#sub-content-1{
+	font-size:2em;
+}
+
+#call-to-action{
+	border-top-style: solid;
+	color: white;
+	display: inline-block;
+}
+#call-to-action h5{
+	color: 	#1f4598;
+}
+.contact{
+	font-size:1em;
+}
+
+.contact h2, h5{
+	color: white;
+}
+
+#sub-content-3 img{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+}
+.sub-content{
+	padding-right: 150px;
+}
+@media only screen and (max-width: 40em){
+	.no-bullet li{
+		margin-left: 15px;
+		margin-right: 0;
+	}
+	.call-to-action-container{
+		padding-left: 0.9375rem!important;
+	}
+
+	#call-to-action{
+		border-width: 2px;
+	}
+	#sub-content-3 img{
+		width: 80%;
+	}
+	.sub-content{
+		padding-right: 0px;
+	}
+}
+@media only screen and (min-width: 40.063em) {
+	.no-bullet li{
+		margin-left: 45px;
+		margin-right: 0;
+	}
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.company-description-container{
+		padding-left:0px;
+	}
+	.sub-content{
+		padding-right: 0px;
+	}
+	#sub-content-1 {
+	font-size: 1.56em;
+	}
+}

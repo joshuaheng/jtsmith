@@ -1,0 +1,150 @@
+.section-title{
+	color: white;
+}
+
+.header-container{
+	background-color: #1f4598;
+}
+
+.subheader h2{
+	color: lightblue;
+	display: inline-block;
+	font-size: 0.75em;
+	bottom: 1px;
+	position: relative;
+}
+
+#product-points{
+	padding-top: 17px;
+}
+#product-points span{
+	color: lightblue;
+	font-size: 1.5em;
+}
+
+#tradeshow-sys-points span{
+	color: white;
+	font-size: 1.5em;
+}
+
+.product-content{
+	padding-right: 150px;
+	line-height: 1.5;
+}
+
+.sub-content-title{
+	margin-bottom:20px;
+}
+
+.right-sub-container, #product-point-container{
+	padding-right: 0;
+}
+
+#grey-triangle-pattern{
+	width: 100%;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	bottom: 0;
+}
+
+#sub-container-2{
+	background-color:  #75c5e6;
+}
+
+.row .textoverlay{
+	width: 100%;
+	color: #1f4598;
+	bottom: 50px;
+}
+
+.svc-content-title{
+	color:#1f4598;
+}
+
+.service-content{
+	padding-right: 60px;
+}
+.sub-content-title h3{
+	display: none;
+}
+
+#contact-container{
+	background-color:#75c5e6;
+}
+
+#contact-container ul{
+	margin-top: 1.25rem;
+}
+
+#contact-container ul li h5, #contact-container ul li h2{
+	color: #1f4598;
+}
+#contact-header-container{
+	/*margin-top: 6%;*/
+}
+#contact-header{
+	color: #1f4598;
+	padding-top: 4.5%;
+}
+
+#call-to-action{
+	padding: 30px;
+}
+@media only screen and (max-width: 40em){
+	.product-content{
+		padding-right: 0px;
+		line-height: normal;
+	}
+	
+	.subheader h2{
+		font-size: 0.5em;
+		bottom: 4px;
+	}
+	
+	
+	.sub-content ul li{
+		font-size: 0.95rem;
+	}
+	#call-to-action{
+		padding: 	15px;
+	}
+
+	#support-team-img{
+		display:none;
+	}
+
+	#contact-header{
+		padding-left: 0px;
+	}
+	.sub-content-title h2{
+		display: none;
+	}
+	.sub-content-title h3{
+		display: inline-block;
+	}
+	#blue-triangle-pattern{
+		width: 45%;
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.sub-content-title h2{
+		display: none;
+	}
+	.sub-content-title h3{
+		display: inline-block;
+	}
+	#blue-triangle-pattern{
+		width: 45%;
+	}
+	.row .textoverlay{
+		bottom: 10px;
+	}
+	.service-content{
+		padding-right: initial;
+	}
+	#contact-container ul{
+		padding-left: 0.9375rem;
+	}
+} /* min-width 641px, medium screens */

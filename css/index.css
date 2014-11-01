@@ -12,7 +12,7 @@ CSS Styling for Main carousel
 
 .owl-carousel div h1, .owl-carousel div .textoverlay{
     position:absolute;
-    color:#1e4595;
+    color:#1f4598;
     width: 100%;
 	height: 100%;
 	padding-left: 15px;
@@ -28,76 +28,6 @@ CSS Styling for Main carousel
 #slide1{
 	text-align: center;
 }
-h1 .tradeshow{
-	line-height: 0.8;
-}
-
-h1 .automation-text{
-	line-height: 0.8;
-}
-.tradeshow{
-	font-style: italic;
-	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
-	font-weight: bold;
-	
-}
-.slide-header{
-	position: relative;
-	top: 25%;
-}
-.automation-text{
-	text-decoration: underline;
-	font-style: italic;
-	font-weight: bold;
-	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
-	line-height: 0.8;
-}
-
-.since-1991-tag{
-	color: #ffffff;
-	font-size: .7em;
-	font-weight: 300;
-	letter-spacing: .25em;
-	font-style: italic;
-	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
-}
-#slide2 .textoverlay{
-	max-width: 532px;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	margin-left: 15px;
-}
-.customer-service-text{
-	font-size: 2.5em;
-	color: white;
-	font-style: italic;
-	font-weight: bold;
-	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
-}
-
-.before-during-after-text{
-	color: aqua;
-	font-weight: bold;
-	font-size: 1.53em;
-	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
-}
-#slide2-title-container{
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-#slide2-summary{
-	color:white;
-	max-width: 500px;
-}
-
-.slide3-header{
-	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
-	font-style: italic;
-	font-weight: bold;
-	color: white;
-	font-size: 0.4em;
-	line-height: 0.9;	
-}
 
 .aligned-right{
 	text-align: right;
@@ -108,7 +38,7 @@ h1 .automation-text{
 
 .aligned-left{
 	font-size: 0.5em;
-	color: #1e4595;
+	color: #1f4598;
 	font-style: normal;
 	font-family: "franklin-gothic-urw-cond-i7", "franklin-gothic-urw-comp" ;
 	letter-spacing: 1.5px;
@@ -124,48 +54,96 @@ h1 .automation-text{
 /**
 CSS Styling for row below main carousel.
 **/
-.secondary-tagline{
-	max-width: none;
-	background-color: #1e4595;
-	color: white;
-}
 
-.secondary-tagline-col{
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
 
 .first-sub-tagline{
-	font-weight: bold;
 	font-size: 2em;
-	text-align: center;
-	margin-top: 1%;
-	position: relative;
-	
+	color: #1f4598;
+	position: relative;	
 	line-height: 1.1;
-	
+	letter-spacing: 1.5px;	
+}
+
+.first-sub-tagline a{
+	color: white;
+
 }
 .second-sub-tagline{
-	padding-right: 30px;
-	padding-left: 30px;
+	width: auto;
 	font-size: 1.3em;
 	border-left-style: none;
+	letter-spacing: 1.5px;
+	color: #1f4598;
 	transition: width 2s;
     transition-timing-function: linear;
 }
 
 .bx-wrapper{
 	padding-top: 0px;
+	max-height: 175px;
 	border-top-style: none;
 	border-left-style: solid;
 }
+.bxslider{
+	margin: 0;
+	max-width: 614px;
+}
+.bx-viewport{
+	height: 275px!important;
+}
 
+.fourth-tagline .large-7{
+	padding-right: 0;
+}
+.fourth-tagline .large-7 img{
+	width: 100%;
+}
+#red-vest-column{
+	padding-left: 7px;
+}
+
+.fourth-tagline h6{
+	color: #1f4598;
+}
+
+.fourth-tagline .tagline-col{
+	padding-top: 10%;
+}
+
+.tablet-col h2, .tablet-col h3, .tablet-col small, .fourth-tagline h6{
+	letter-spacing: 1.5px;
+}
+
+.tablet-col h2, .tablet-col h3, .tablet-col small{
+	color: white;
+	line-height: 1.5;
+}
+
+.tablet-col small{
+	padding-top: 0.6rem;
+	font-size: 75%;
+}
+
+.tablet-col h3{
+	display: inline-block;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: white;
+	border-width: 1.5px;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+}
 /**
 Media Queries
 **/
 @media only screen and (max-width: 40em) {
+
+	.first-sub-tagline{
+		display: none;
+	}
 	#mobile-main-content{
 		display:inline-block;
+		width: 100%;
 	}
 	.textoverlay{
 		position:absolute;
@@ -177,9 +155,8 @@ Media Queries
 	}
 	.bx-wrapper{
 		border-left-style: none;
-		border-top-style: solid;
-		padding-top: 40px;
-		border-top-width: 1.5px;
+		height: 300px;
+
 	}
 	.first-sub-tagline{
 		font-size: 1.2em;
@@ -190,11 +167,6 @@ Media Queries
 		padding-left: 0px;
 	}
 
-	.bx-wrapper{
-		padding-top: 40px;
-		
-		border-left-style: none;
-	}
 	.slide-header{
 		font-size: 1.3em;
 		top: 10px;
@@ -215,9 +187,6 @@ Media Queries
 		padding-top: 1%;
 		padding-bottom: 1%;
 	}
-	.first-sub-tagline{
-		top: 25px;
-	}
 	.slide-header{top: 12%;}
 	.tradeshow{font-size:1.5em;}
 	.automation-text{font-size:1.5em;}
@@ -235,9 +204,6 @@ Media Queries
 	#slide2 .textoverlay{
 		padding-top: 2.6%;
 		padding-bottom: 3%;
-	}
-	.first-sub-tagline{
-		top: 25px;
 	}
 	.slide-header{top: 15%;}
 	.tradeshow{font-size:1.9em;}
@@ -302,9 +268,6 @@ Media Queries
 	.since-1991-tag{
 		letter-spacing:4px;
 	}
-	.first-sub-tagline{
-		top: 20px;
-	}
 	.slide3-header{font-size: 0.4em;}
 	.company-description-container{margin-top: 18%;}
 	.aligned-left{font-size:0.45em;}
@@ -328,9 +291,7 @@ Media Queries
 	.
 } /* min-width 1441px, xlarge screens */ 
 @media only screen and (min-width: 90.063em) and (max-width: 110em){
-	.first-sub-tagline{
-		top: 20px;
-	}
+
 }
 @media only screen and (min-width: 1750px){
 	.slide-header{

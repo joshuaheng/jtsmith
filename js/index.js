@@ -1,17 +1,18 @@
 $(function(){
 	//Initialize foundation navbar
 	$(document).foundation();
-	
+	$('.home-link').addClass('current');
 	//Initialize main carousel
 	$("#owl-demo").owlCarousel({
-	    autoPlay : 3000,
+	    autoPlay : 5000,
 	    stopOnHover : true,
 	    navigation:false,
 	    paginationSpeed : 1000,
 	    goToFirstSpeed : 3000,
 	    singleItem : true,
 	    autoHeight : true,
-	    transitionStyle:"fade"
+	    transitionStyle:"fade",
+	    pagination: false
 	  });
 
 	//initialize fade out carousel for 
@@ -20,17 +21,11 @@ $(function(){
 	 	auto: true,
 	 	pager: false,
 	 	controls: false,
-	 	speed: 1000
+	 	speed: 5000
 	 });
-
-	 //Detects if document size is in mobile width, toggles the nav list layout as inline or stacked.
-	 $( window ).resize(function() {
-	 	if($( document ).width() <= 640){
-	 		$('.site-list-container').toggleClass('inline-list');
-	 	}
-	 	else{
-	 		$('.site-list-container').toggleClass('inline-list');
-	 	}
-	 });
+	 
+	 	$('.top-bar, [data-topbar]').hasClass("expanded", function(){
+	 		console.log("hello world");
+	 	});
 	 
 });

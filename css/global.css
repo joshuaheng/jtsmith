@@ -1,7 +1,101 @@
-body{
+body, a, div, h1, h2, h3, h4, h5, h6, label, input[type="text"], input[type="password"], input[type="email"]{
 	font-family: "franklin-gothic-urw-comp";
 }
 
-h1, a{
-	color: #1e4595;
+h1, h2, h3, h4, a, a:hover, a:focus{
+	color: #1f4598;
+	letter-spacing: 1.5px;
+}
+
+label{
+	font-size: 1.2rem;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+	font-size: 1.1rem;
+}
+
+.button-template{
+	color: #1e4595!important;
+	background: white!important;
+	background-color: none!important;
+	padding: 0px!important;
+}
+
+.reports-login-btn{
+	width: 150px;
+}
+.row-reset{
+	max-width: none;
+}
+
+.header-container{
+	/**padding-left: 15px;
+	padding-top: 35px;
+	padding-bottom: 35px;**/
+}
+
+.section-title{
+	font-size: 4em;
+	font-weight: 400
+}
+
+.sub-content-container{
+	font-size: 1em;
+	color: #1f4598;
+}
+
+.sub-content{
+	/* margin-bottom: 30px; */
+	font-size: 1.4em;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+
+.center-div{
+	text-align: center;
+}
+.quotes{
+	font-size: 5em;
+	color: grey;
+	vertical-align: text-bottom;
+	line-height: 0;
+}
+.tagline-col{
+	padding: 60px;
+}
+
+
+.header-container .tagline-col{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.secondary-tagline{
+	max-width: none;
+	color: white;
+}
+.blue-background{
+	background-color:rgb(20, 37, 76);
+}
+
+.grey-background{
+	background-color: lightgrey;
+}
+
+@media only screen and (max-width: 40em){
+	.section-title{
+		font-size: 2em;
+	}
+	.header-container{
+		padding-left: 0px;
+	}
+	.sub-content{
+		padding-right: 0px;
+		font-size: 1.19em;
+		letter-spacing: normal;
+	}
+	.tagline-col{
+		padding: 30px;
+	}
 }
