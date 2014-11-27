@@ -11,18 +11,15 @@
 	position: relative;
 }
 
-
-#gray-triangle-pattern{
-	width: 42%;
-	position: absolute;
-	bottom: 0;
-	z-index: -1;
-}
-
 .call-to-action-container{
 	background-color:#75c5e6;
 }
-
+.no-bullet{
+	max-width: 233px;
+	left: 0;
+	right: 0;
+	margin: 0 auto!important;
+}
 .no-bullet li{
 	padding-bottom: 15px;
 	margin-left: 18%;
@@ -32,23 +29,20 @@
 	display: block;
 }
 #sub-content-1{
-	font-size:2em;
+	font-size:1.5em;
+	font-family: 'alternate-gothic-no-3-d';
 }
 
 #call-to-action{
+	padding-top: 15px;
 	border-top-style: solid;
 	color: white;
 	display: inline-block;
 }
 #call-to-action h5{
-	color: 	#1f4598;
-}
-.contact{
-	font-size:1em;
-}
-
-.contact h2, h5{
-	color: white;
+	/*color: #1f4598;*/
+	color:rgb(20, 37, 76);
+	font-size: 0.8rem;
 }
 
 #sub-content-3 img{
@@ -61,8 +55,8 @@
 }
 @media only screen and (max-width: 40em){
 	.no-bullet li{
-		margin-left: 15px;
 		margin-right: 0;
+		margin-left: 0;
 	}
 	.call-to-action-container{
 		padding-left: 0.9375rem!important;
@@ -77,10 +71,13 @@
 	.sub-content{
 		padding-right: 0px;
 	}
+	#contact-container ul{
+		padding-left: 15px;
+	}
 }
 @media only screen and (min-width: 40.063em) {
 	.no-bullet li{
-		margin-left: 45px;
+		margin-left: 0px;
 		margin-right: 0;
 	}
 }
@@ -93,5 +90,12 @@
 	}
 	#sub-content-1 {
 	font-size: 1.56em;
+	}
+}
+
+@media only screen and (max-width: 64em) {
+	.no-bullet{
+		position: relative;
+		margin: 0!important;
 	}
 }

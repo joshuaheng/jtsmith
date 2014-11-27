@@ -3,17 +3,15 @@
 }
 
 .header-container{
-	background-color: rgb(20, 37, 76);
+	background-color: #1f4598;
 }
 
-.section-title .subheader{
+.subheader h2{
 	color: lightblue;
 	display: inline-block;
 	font-size: 0.75em;
 	bottom: 1px;
 	position: relative;
-	font-family: 'alternate-gothic-no-3-d';
-	letter-spacing: 8px;
 }
 
 #product-points{
@@ -21,40 +19,58 @@
 }
 #product-points span{
 	color: lightblue;
-	font-size: 0.8rem;
+	font-size: 1.5em;
 }
 
 #tradeshow-sys-points span{
 	color: white;
-	font-size: 0.8rem;
+	font-size: 1.5em;
 }
 
 .product-content{
-	padding-right: 50px;
+	padding-right: 150px;
+	line-height: 1.5;
 }
 
 .sub-content-title{
 	margin-bottom:20px;
 }
 
+.right-sub-container, #product-point-container{
+	padding-right: 0;
+}
+
+#blue-triangle-pattern{
+	width: 80%;
+	float: right;
+}
 
 #sub-container-2{
 	background-color:  #75c5e6;
 }
 
+#support-team-container .columns{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .row .textoverlay{
+	position: absolute;
 	width: 100%;
-	color: rgb(20, 37, 76);
+	color: white;
+	padding-left: 15px;
 	bottom: 50px;
 }
 
 .svc-content-title{
-	/*color: #1f4598;*/
-	color:rgb(20, 37, 76);
+	color:white;
 }
 
 .service-content{
 	padding-right: 60px;
+}
+.sub-content-title h3{
+	display: none;
 }
 
 #contact-container{
@@ -65,57 +81,44 @@
 	margin-top: 1.25rem;
 }
 
-#contact-container ul li h5{
-	/*color: #1f4598;*/
-	color:rgb(20, 37, 76);
-	font-size: 0.8rem;
+#contact-container ul li h5, #contact-container ul li h2{
+	color: #1f4598;
 }
 #contact-header-container{
-	/*display: table;*/
+	margin-top: 6%;
+	margin-bottom: 6%;
 }
 #contact-header{
-	color:rgb(20, 37, 76);
-	max-width: 450px;
-	font-family: 'alternate-gothic-no-3-d';	
-}
-
-#tradeshow-sys-points li, #product-points li{
-	list-style-position: inside;
-	text-indent: -1em;
-}
-
-
-#call-to-action{
-	padding: 30px;
+	color: #1f4598;
+	padding-left: 15px;
 }
 @media only screen and (max-width: 40em){
 	.product-content{
 		padding-right: 0px;
-	}
-
-	#tradeshow-sys-points, #product-points{
-		padding-left: 1em;
+		line-height: normal;
 	}
 	
-	.section-title .subheader{
+	.subheader h2{
 		font-size: 0.5em;
 		bottom: 4px;
-		letter-spacing: 4px;
 	}
 	
-	#call-to-action{
-		padding: 	0;
+	
+	.sub-content ul li{
+		font-size: 0.95rem;
+	}
+	#support-team-container{
+		background-color:#1f4598;
 	}
 
 	#support-team-img{
 		display:none;
 	}
-
+	.row .textoverlay{
+		position: relative;
+	}
 	#contact-header{
 		padding-left: 0px;
-	}
-	.sub-content-title{
-		margin-bottom: 0;
 	}
 	.sub-content-title h2{
 		display: none;
@@ -126,15 +129,15 @@
 	#blue-triangle-pattern{
 		width: 45%;
 	}
-	.service-content{
-		padding-right: initial;
-	}
-	.right-overlay, .left-overlay{
-		display: none;
-	}
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.sub-content-title h2{
+		display: none;
+	}
+	.sub-content-title h3{
+		display: inline-block;
+	}
 	#blue-triangle-pattern{
 		width: 45%;
 	}
@@ -144,14 +147,7 @@
 	.service-content{
 		padding-right: initial;
 	}
-	
-	#call-to-action{
-		padding-left: 0;
+	#contact-container ul{
+		padding-left: 0.9375rem;
 	}
 } /* min-width 641px, medium screens */
-
-@media only screen and (max-width: 64em) {
-	#contact-container ul{
-		padding-left: 15px;
-	}
-}

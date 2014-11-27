@@ -1,53 +1,66 @@
 #copyright-tag{
-	letter-spacing: 1.5px;
+	letter-spacing: 0.42px;
+	font-size: 10px;
+	display: inline-block;
+}
+#copyright-tag-mobile{
+	display: none;
 }
 
 #footer-logo{
 	display: inline-block;
+	width: 300px;
+	padding-right: 15px;
 }
-
+#footer-logo a img{
+	width: 285px;
+}
 #footer-logo a{
-	display: inline-block
+	display: inline-block;
 }
 .footer{
-	padding-right: 	0;
+	padding-bottom: 30px;
 }
 .footer small{
-	line-height: 	1.5;
+	line-height: 	2.1;
+	font-size: 80%;
 }
-.footer .large-5{
+.footer>#footer-logo-container{
 	border-right-style: solid;
 	border-right-width: 1.5px;
-	padding-left: 	0;
 }
 #footer-contact{
 	display: inline;
 }
-#footer-contact h6, h5{
+#footer-contact h6{
 	color: white;
 }
 
-#footer-contact small{
-	letter-spacing: 1.5px;
-	font-size: 75%;
+.footer-labels{
+	position: absolute;
+	bottom: 80px;
 }
-
 .footer-contact-wrapper{
 	position: relative;
-	height: 113px!important;
+	height: 87px!important;
 }
 
 .footer-contact-wrapper h5{
 	position: absolute;
+	top: 5px;
 }
 
 .contact-content{
 	position: absolute;
 	bottom: 0;
 }
+
+.contact-content a{
+	color: white;
+}
 #footer-social-media{
 	margin-left: 0;
-	bottom: 7px;
+	bottom: 4px;
 	margin-bottom: 0;
 }
 
@@ -58,13 +71,77 @@
 	border-right-style: none;
 }
 #footer-social-media li a img{
-	width: 60px;
+	width: 40px;
 }
-@media only screen and (max-width: 64em) {
-	.footer .large-5{
+@media only screen and (max-width: 40em){
+	#copyright-tag{
+		display: none;
+	}
+	#copyright-tag-mobile{
+		display: inline-block;
+		letter-spacing: 0.42px;
+		font-size: 10px;
+	}
+	.footer>#footer-logo-container{
 		border:none;
 	}
-	.footer .columns{
-		padding-left: 	0;
+	.footer-labels{
+		bottom: 60px;
+	}
+	.contact-content{
+		bottom: -15px;
+	}
+
+	#follow-us-label{
+		bottom: 25px;
+	}
+	#footer-social-media{
+		bottom: -20px;
+	}
+
+	.footer small{
+		font-size: 70%;
+	}
+}
+@media only screen and (max-width: 64em) {
+	#copyright-tag{
+		font-size: 9px;
+	}
+	#footer-logo{
+		width: 289px;
+		padding-right: 30px;
+	}
+	#footer-logo a img{
+		width: 274px;
+	}
+	
+	.footer-contact-wrapper{
+		padding-left: 0;
+	}
+
+	.tagline-col .footer-mobile{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width:768px){
+	.footer-contact-wrapper{
+		height: 74px!important;
+	}
+	.footer-labels{
+		bottom: 67px;
+	}
+	#footer-logo{
+		width: 240px;	
+	}
+	#copyright-tag{
+		font-size: 7px;
+	}
+	#footer-social-media li a img{
+		width: 28px;
+	}
+	.footer small{
+		font-size: 60%;
 	}
 }

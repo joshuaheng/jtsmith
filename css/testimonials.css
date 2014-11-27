@@ -1,17 +1,36 @@
 .section-title{
 	color: white;
 }
-.customers-container{
-	padding-left: 	30px;
+.customer-wrapper{
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .customers-container img{
-	height: 100px;
+	max-height: 46px;
 }
 
 .customers-container .columns{
 	text-align: center;
 	padding: 	30px;
 }
+
+#testimonial-intro, .testimonial-text{
+	/*color: #1f4598;*/
+	color:rgb(20, 37, 76);
+}
+
+#testimonial-intro{
+	max-width: 755px;
+}
+
+.testimonial-text{
+	max-width: 350px;
+}
+
+.main-testimonial-img{
+	width: 220px;
+}
+
 @media only screen and (max-width: 40em){
 	.customers-container{
 			padding-left: 	0px;

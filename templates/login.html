@@ -1,19 +1,21 @@
 <!--Reports Login form-->
   <div id="reports-login-form" class="reveal-modal small" data-reveal>
-    <div id="login-logo-wrapper"><a href="#"><img id="login-logo"src="./img/JT_Smith-final-logo-blue_4web.png"></a></div>
+    <div class="login-logo-wrapper"><a href="#"><img class="login-logo" src="./img/JT_Smith-final-logo-blue_4web.png" alt="J.T. Smith"></a></div>
     <hr>
     <form data-abide="ajax" id="reports-login">
       <div class="row">
-        <div class="large-12 columns reports-login-wrapper">
+        <div class="large-12 columns reports-login-wrapper bodytext">
           <label>Login Code
             <input type="text" placeholder="Enter your login code" id="report-login-input"/>
           </label>
-          <small class="error" id="login-error">A valid login code is required.</small>
+          <div data-alert class="alert-box alert radius" id="reports-login-error">
+            A valid login code is required.
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="large-12-columns login-btn-container">
-          <a href="#" type="submit" class="button [large] button-template" id="form-report-login-btn">LOG-IN</a>
+          <a href="#" class="button [large] button-template" id="form-report-login-btn"><img src="./img/login-button.png" alt=""></a>
         </div>
       </div>
     </form>
@@ -23,13 +25,13 @@
 
   <!--Employees Login form-->
   <div id="employee-login-form" class="reveal-modal small" data-reveal>
-    <div id="login-logo-wrapper"><a href="#"><img id="login-logo"src="./img/JT_Smith-final-logo-blue_4web.png"></a></div>
+    <div class="login-logo-wrapper"><a href="#"><img class="login-logo" src="./img/JT_Smith-final-logo-blue_4web.png" alt="J.T. Smith"></a></div>
     <hr>
     <form data-abide>
       <div class="row">
         <div class="large-12 columns">
           <label>Email
-            <input type="email" placeholder="Enter your email"  pattern="email"/>
+            <input type="email" placeholder="Enter your email"  pattern="email" id="employee-email"/>
             <small class="error">A valid email is required.</small>
           </label>
         </div>
@@ -37,13 +39,16 @@
       <div class="row">
         <div class="large-12 columns">
           <label>Password
-            <input type="password" placeholder="Enter your password" />
+            <input type="password" placeholder="Enter your password" id="employee-pw"/>
           </label>
+          <div data-alert class="alert-box alert radius" id="employee-login-error">
+            A valid email or password is required.
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="large-12-columns login-btn-container">
-          <a href="#" class="button [large] button-template" id="form-login-btn">LOG-IN</a>
+          <a href="#" class="button [large] button-template" id="form-employee-login-btn"><img src="./img/login-button.png" alt=""></a>
         </div>
       </div>
     </form>

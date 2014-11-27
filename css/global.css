@@ -1,17 +1,21 @@
 body, a, div, h1, h2, h3, h4, h5, h6, label, input[type="text"], input[type="password"], input[type="email"]{
-	font-family: "franklin-gothic-urw-comp";
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, a, a:hover, a:focus{
-	color: #1f4598;
-	letter-spacing: 1.5px;
+	/*color: #1f4598;*/
+	color: rgb(20, 37, 76);	
+}
+
+hr{
+	margin: 1.25rem 0 0.2rem;
 }
 
 label{
-	font-size: 1.2rem;
+	font-size: 0.8rem;
 }
 input[type="text"], input[type="password"], input[type="email"]{
-	font-size: 1.1rem;
+	font-size: 0.8rem;
 }
 
 .button-template{
@@ -24,8 +28,25 @@ input[type="text"], input[type="password"], input[type="email"]{
 .reports-login-btn{
 	width: 150px;
 }
-.row-reset{
-	max-width: none;
+.contact{
+	font-size:1em;
+}
+
+.contact h3,.contacts h5{
+	color: white;
+}
+
+.contact h3{
+	font-family: 'alternate-gothic-no-3-d';
+}
+.contact h3 a{
+	color: white;
+	font-family: 'alternate-gothic-no-3-d';
+}
+
+.reveal-modal, dialog{
+	border-radius: 10px;
+	}
 }
 
 .header-container{
@@ -35,33 +56,27 @@ input[type="text"], input[type="password"], input[type="email"]{
 }
 
 .section-title{
-	font-size: 4em;
-	font-weight: 400
+	letter-spacing: 8px!important;
+	display: inline;
 }
 
 .sub-content-container{
 	font-size: 1em;
-	color: #1f4598;
+	/*color: #1f4598;*/
+	color:rgb(20, 37, 76);
 }
 
 .sub-content{
-	/* margin-bottom: 30px; */
-	font-size: 1.4em;
-	letter-spacing: 1.5px;
 	line-height: 1.5;
 }
 
 .center-div{
 	text-align: center;
 }
-.quotes{
-	font-size: 5em;
-	color: grey;
-	vertical-align: text-bottom;
-	line-height: 0;
-}
+
 .tagline-col{
-	padding: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 
@@ -70,9 +85,17 @@ input[type="text"], input[type="password"], input[type="email"]{
 	padding-bottom: 30px;
 }
 
+.header{
+	font-family: 'alternate-gothic-no-3-d';
+	letter-spacing: 3.8px;
+}
+
+.bold-font{
+	font-weight: bold;
+}
+
 
 .secondary-tagline{
-	max-width: none;
 	color: white;
 }
 .blue-background{
@@ -83,19 +106,105 @@ input[type="text"], input[type="password"], input[type="email"]{
 	background-color: lightgrey;
 }
 
+.lightblue-background{
+	background-color: #75c5e6;
+}
+
+.white-background{
+	background-color: white;
+}
+.mobile-header{
+	display: none;
+}
+
+.dual-color-container{
+	position: relative;
+}
+
+.left-overlay{
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+}
+.right-overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+}
+
+.bodytext{
+	font-size: 0.8rem;
+	line-height: 1.9;
+}
+
+.testimonial-origin{
+	font-weight: bold;
+}
 @media only screen and (max-width: 40em){
+	.non-mobile-header{
+		display: none;
+	}
+	.mobile-header{
+		display: block;
+	}
 	.section-title{
 		font-size: 2em;
+		letter-spacing: 4px!important;
 	}
 	.header-container{
 		padding-left: 0px;
 	}
+	.service-content{
+		padding-bottom: 30px;
+	}
 	.sub-content{
 		padding-right: 0px;
-		font-size: 1.19em;
-		letter-spacing: normal;
 	}
+
 	.tagline-col{
-		padding: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.reports-login-btn{
+		width: 100%;
+	}
+	.right-overlay, .left-overlay{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 64em){
+	.lightblue-mobile-overlay{
+		background-color: #75c5e6;
+	}
+	.grey-mobile-overlay{
+		background-color: lightgrey;
+	}
+
+	.tagline-col{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.mobile-row{
+		margin-left: 0;
+		margin-right: 0;
+		max-width: initial;
+	}
+
+	.mobile-row>.columns{
+		padding-left: 42px;
+		padding-right: 42px;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.right-overlay{
+		width: 300px;
 	}
 }

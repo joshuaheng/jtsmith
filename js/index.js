@@ -4,15 +4,15 @@ $(function(){
 	$('.home-link').addClass('current');
 	//Initialize main carousel
 	$("#owl-demo").owlCarousel({
-	    autoPlay : 5000,
+	    autoPlay : 8000,
 	    stopOnHover : true,
 	    navigation:false,
-	    paginationSpeed : 1000,
+	    paginationSpeed : 5000,
 	    goToFirstSpeed : 3000,
 	    singleItem : true,
 	    autoHeight : true,
 	    transitionStyle:"fade",
-	    pagination: false
+	    pagination: true,
 	  });
 
 	//initialize fade out carousel for 
@@ -24,8 +24,8 @@ $(function(){
 	 	speed: 5000
 	 });
 	 
-	 	$('.top-bar, [data-topbar]').hasClass("expanded", function(){
-	 		console.log("hello world");
-	 	});
-	 
+ 	$('.top-bar, [data-topbar]').hasClass("expanded", function(){
+ 		console.log("hello world");
+ 	});
+
 });

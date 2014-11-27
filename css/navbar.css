@@ -8,7 +8,7 @@ CSS for main navbar
 
 
 .top-bar .toggle-topbar.menu-icon a {
-color:#1e4595;
+color:rgb(20, 37, 76);;
 }
 
 .top-bar .toggle-topbar.menu-icon a span::after{
@@ -22,28 +22,25 @@ color:#1e4595;
 }
 
 .top-bar-section ul li>a {
-	color:#1e4595;
+	color:rgb(20, 37, 76);
 	background-color: white;
 }
 
 .top-bar-section ul li{
 	background-color: white;
 }
-.inline-list>li {
+.top-bar .name h1 a{
+	padding: 0px;
+}
+.site-nav-container-main ul li, .footer-contact-wrapper ul li {
 	background: transparent;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
 	margin-left: 0;
 	border-right-style: solid;
-	border-color:#1e4595;
-	font-weight: bold;
+	border-color:lightgrey;
 }
-#reports-login-btn{
-	font-family: "franklin-gothic-urw-comp";
-	font-weight: bold;
-	font-size: 1.3em;
-	padding: 4px;
-}
+
 #nav-last-child{
 	border-right-style:none;
 }
@@ -51,28 +48,28 @@ color:#1e4595;
 .top-bar-section li:not(.has-form) a:not(.button){
 	line-height: normal;
 	background: transparent!important;
-	font-family: "franklin-gothic-urw-comp";
+	font-family: 'alternate-gothic-no-3-d';
 	font-size:1.3em;
 }
 .top-bar-section li:not(.has-form) a:not(.button):hover{
-	color: #008cba;
+	color: rgb(20, 37, 76);;
 }
 
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
 	background-color: white; 
-	color: #1e4595;
+	color: rgb(20, 37, 76);;
 }
 
 #navbar-logo{
-	width:73%;
+	max-width:230px;
+	height: 45px;
 	padding-top: 10px;
-	padding-left: 45px;
 }
 .site-nav-container-main{
 	float: right;
 	display: none;
 	position: absolute;
-	right: 20px;
+	right: 3px;
 	top: 75px;
 }
 
@@ -84,7 +81,6 @@ color:#1e4595;
 .site-nav-container-mobile li{
 	border-top-style: solid;
 	border-color: lightgrey;
-	margin-left: 15px;
 	margin-right: 15px;
 }
 .site-nav-container-mobile li:last-child{
@@ -99,8 +95,8 @@ color:#1e4595;
 #reports-login-mobile-container{
 	display: none;
 	width: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
 	padding-top: 40px;
 	padding-bottom: 60px;
 }
@@ -110,16 +106,24 @@ color:#1e4595;
 	width:100%;
 }
 
+.site-nav-container-main ul li a{
+	font-family: alternate-gothic-no-3-d;
+	letter-spacing: 1.5px;
+}
 
+.site-nav-container-mobile ul li a{
+	font-family: alternate-gothic-no-3-d;
+	letter-spacing: 1.5px;
+}
 /**
 CSS for login in form
 **/
 
-#login-logo-wrapper{
+.login-logo-wrapper{
 	text-align: center;
 }
 
-#login-logo{
+.login-logo{
 	width: 60%;
 }
 
@@ -131,23 +135,51 @@ CSS for login in form
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
 	padding-top: 0.9375rem;
+	width: 200px;
+	margin: 0 auto;
+}
+#blue-navbar{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.blue-nav-content{
+	color: white;
+	display: inline;
+	float: right;
 }
 
+#horizontalbar{
+	padding-left: 10px;
+}
+
+.blue-nav-content a img{
+	width: 15px;
+	margin-left: 10px;
+}
+
+.blue-nav-content small{
+	letter-spacing: 1.5px;
+}
+
+#mail-icon{
+	width: 23px;
+}
+
+#reports-login-error{
+	visibility:hidden;
+}
+
+#employee-login-error{
+	visibility:hidden;
+}
 /**
 Media queries
 **/
-@media only screen and (max-width: 40em) and (orientation: landscape){
-	#navbar-logo{
-		width: 45%;
-	}
 
-}
-@media only screen and (max-width: 40em) and (orientation: portrait){
-	#navbar-logo{
-		width: 80%;
-	}
-}
 @media only screen and (max-width: 40em){
+	#blue-navbar{
+		display: none;
+	}
 	.top-bar{
 		height: 70px;
 	}
@@ -155,9 +187,8 @@ Media queries
 		top: 16px;
 	}
 	#navbar-logo{
-		padding-top: 15px;
-		/*margin-left: 17px;*/
-		padding-left: 30px;
+		height: 50px;
+		
 	}
 	.name a{
 		padding-left: 0!important;
@@ -203,7 +234,7 @@ Media queries
 	}
 	.top-bar .title-area {
 		position: absolute;
-		top: 20px;
+		top: 45px;
 	}
 	.top-bar-section li:not(.has-form) a:not(.button) {
 		height: 80px;
@@ -211,7 +242,7 @@ Media queries
 
 	.top-bar-section ul {
 		position: relative;
-		right: 30px;
+		right: 0;
 		top: 15px;
 	}
 	/*.top-bar-section ul li>a.button{
@@ -229,19 +260,8 @@ Media queries
 		display:inline-block;
 	}
 } /* min-width 641px, medium screens */
-@media only screen and (min-width: 64.063em){
-	#login-logo{
-		width: 50%;
+@media only screen and (min-width: 40.063em)and (max-width: 870px){
+	.title-area{
+		top: 20px!important;
 	}
-	#navbar-logo{
-		padding-top: 15px;
-	}
-}
-@media only screen and (min-width:801px) and (max-width: 900px){
-	#navbar-logo{width:63%;}
-
-}
-
-@media only screen and (min-width:40.063em) and (max-width: 800px){
-	#navbar-logo{width:50%;}
 }
